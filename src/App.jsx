@@ -1,12 +1,17 @@
 import { useState } from 'react'
 import './App.css'
 import { Route, Router, Routes } from 'react-router-dom'
+import Header from './components/header/Header'
+import Home from './pages/Home'
 
 function App() {
 
   return (
    <>
-<h1>Hello</h1>
+   <Header/>
+<Routes>
+  <Route path='/' element={<Home/>} />
+</Routes>
    </>
   )
 }
