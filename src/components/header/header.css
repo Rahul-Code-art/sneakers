@@ -89,9 +89,7 @@ transform: translate(-50%, -50%);
     color: white;
 }
 
-.offcanvas .nav-link {
-    color: white !important;
-}
+
 
 .offcanvas .nav-link:hover {
     color: var(--accent) !important;
@@ -145,4 +143,84 @@ transform: translate(-50%, -50%);
 .navbar-toggler:focus{
     outline: none !important;
     box-shadow: none;
+}
+.sub-menu a{
+    color: var(--primary) !important;
+}
+
+
+
+.mega-menu-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #f5f5f5;
+  padding: 40px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.mega-menu:hover .mega-menu-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.mega-menu-content h6 { font-weight: bold; margin-bottom: 15px; }
+ .mega-menu-content ul { list-style: none; padding: 0; }
+  .mega-menu-content ul li { margin-bottom: 8px; }
+   .mega-menu-content ul li a { text-decoration: none; color: #333; }
+    .mega-menu-content ul li a:hover { color: #000; font-weight: 500; }
+
+.custom-menu{
+    position: relative;
+}
+
+.custom-menu-content{
+     position: absolute;
+  top: 127%;
+  left: 0;
+  width: 200px;
+  background: #f5f5f5;
+  padding: 40px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: all 0.3s ease;
+  z-index: 999;
+  border-radius: 10px;
+}
+
+.custom-menu:hover .custom-menu-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.custom-menu-content h6 { font-weight: bold; margin-bottom: 15px; }
+ .custom-menu-content ul { list-style: none; padding: 0; }
+  .custom-menu-content ul li { margin-bottom: 8px; }
+   .custom-menu-content ul li a { text-decoration: none; color: #333; }
+    .custom-menu-content ul li a:hover { color: #000; font-weight: 500; }
+
+
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.search-box {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 500px;
 }
