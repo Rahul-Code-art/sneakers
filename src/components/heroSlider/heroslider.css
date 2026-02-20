@@ -1,0 +1,67 @@
+  /* swiper-navigation-icon */
+  .swiper-button-prev {
+  left: 30px !important;   /* default is 10px */
+}
+
+.swiper-button-next {
+  right: 30px !important;
+}
+    /* Position arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;              /* Arrow color */
+  background: rgba(0, 0, 0, 0.5);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: black;
+}
+
+
+/* Change arrow size */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px ;
+  font-weight: bold;
+}
+
+.swiper-navigation-icon{
+    width: auto !important;
+    height: auto !important;
+}
+
+/* Default bullets */
+.swiper-pagination-bullet {
+  background: white;
+  opacity: 0.6;
+  width: 12px;
+  height: 12px;
+}
+
+/* Active bullet */
+.swiper-pagination-bullet-active {
+  background: red;
+  opacity: 1;
+  transform: scale(1.2);
+}
+.swiper-pagination {
+  bottom: 20px !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+}
+
+.swiper-pagination-bullet {
+  background: #ccc;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff4d4d;
+}
