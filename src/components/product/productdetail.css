@@ -1,0 +1,14 @@
+.product-detail{
+    padding: 3rem 0 !important;
+}
+
+.image-holder {
+    position: relative;
+}
+
+.image-holder img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
