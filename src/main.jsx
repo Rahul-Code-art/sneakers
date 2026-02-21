@@ -6,16 +6,20 @@ import { BrowserRouter } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { AuthProvider } from './context/AuthContext.jsx'
+import { CartProvider } from "./context/CartContext";
 
 
-createRoot(document.getElementById('root')).render(
 
-   <BrowserRouter>
-     <AuthProvider>
+   createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <AuthProvider>
+        <CartProvider>
+          <App />
+        </CartProvider>
+      </AuthProvider>
+    </BrowserRouter>
   </StrictMode>
-  </AuthProvider>
-  </BrowserRouter>
+
   
 )
